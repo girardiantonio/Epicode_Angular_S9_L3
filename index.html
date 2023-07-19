@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <h1 class="text-center mt-5">Sistema tasse lavoratore</h1>
+
+    <form id="form" class="row g-3 m-5">
+      <div class="input-group mb-3">
+        <label id="textname" class="input-group-text" for="inputGroupSelect01"
+          >Lavoratore:</label
+        >
+        <select class="form-select dropdown" id="inputGroupSelect01">
+          <option selected>Choose...</option>
+          <option value="1">Artigiano</option>
+          <option value="2">Informatico</option>
+          <option value="3">Autonomo</option>
+        </select>
+      </div>
+
+      <div id="lista">
+        <ul>
+          <li>Redditività: <span id="rednum"></span></li>
+          <li>Tasse Inps: <span id="inpsnum"></span></li>
+          <li>Tasse Irpef: <span id="irpefnum"></span></li>
+        </ul>
+      </div>
+
+      <div class="input-group mb-3">
+        <span id="textname" class="input-group-text">Reddito Annuo Lordo</span>
+        <input
+          id="inputfield"
+          type="text"
+          class="form-control"
+          aria-label="Dollar amount (with dot and two decimal places)"
+        />
+      </div>
+
+      <div class="col-auto">
+        <button id="" type="submit" class="btn btn-primary mb-3">
+          Calcola
+        </button>
+      </div>
+      <div class="input-group mb-3">
+        <span id="textname" class="input-group-text">Reddito Annuo Netto</span>
+        <span id="result" class="form-control"></span>
+      </div>
+    </form>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
